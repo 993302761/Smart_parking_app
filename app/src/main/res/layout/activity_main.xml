@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_function"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/rg_function"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:paddingTop="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_index"
+            style="@style/rb_style"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/index_selector"
+            android:text="主页"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/rb_function"
+            style="@style/rb_style"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/function_selector"
+            android:textSize="11sp"
+            android:text="地图"/>
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/rb_style"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/me_selector"
+            android:text="我的"
+            android:textSize="11sp" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

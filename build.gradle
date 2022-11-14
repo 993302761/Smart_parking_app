@@ -1,0 +1,39 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+//编译时要用到的依赖
+
+
+buildscript {
+    //指定仓库
+    repositories {
+        mavenLocal()
+        maven {url('https://maven.aliyun.com/repository/central')}
+        mavenCentral()
+        google()
+    }
+    //指定特殊依赖
+    dependencies {
+        //依赖gradle7.0.2
+        classpath "com.android.tools.build:gradle:7.0.2"
+
+    }
+
+
+allprojects {
+    tasks.withType(JavaCompile) {
+
+        //JDK版本
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+        //指定的编码格式
+        options.encoding = "UTF-8"
+
+    }
+
+
+}
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
