@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:padding="15dp"
         android:text="点击选择您的路线"
-        android:textColor="#00ffff" />
+        android:textColor="#010B0B" />
 
     <ListView
         android:id="@+id/transitList"

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--添加数组元素-->
+    <string-array name="order">
+        <item>万达广场-地下停车场 （已完成）</item>
+        <item>天津职业技术师范大学停车场 （已取消）</item>
+        <item>万达广场-地下停车场 （已取消）</item>
+        <item>天津职业技术师范大学停车场 （已完成）</item>
+        <item>天津职业技术师范大学停车场 （已完成）</item>
+    </string-array>
+
+
+</resources>

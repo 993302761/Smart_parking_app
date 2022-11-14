@@ -38,7 +38,7 @@
         android:drawablePadding="30dp"
         android:gravity="center_vertical"
         android:paddingLeft="30sp"
-        android:text="我的账单"
+        android:text="我的订单"
         android:textColor="#323232"
         android:textSize="20sp" />
 
