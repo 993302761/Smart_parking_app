@@ -527,7 +527,6 @@ public class Functionrealization extends Fragment   implements OnGetPoiSearchRes
             public void onMapClick(LatLng latLng) {
                 mSugListView.setAdapter(null);
                 showPoiDetailView(false);
-
             }
 
             @Override
@@ -569,6 +568,7 @@ public class Functionrealization extends Fragment   implements OnGetPoiSearchRes
      * 初始化
      */
     private void initView(View view) {
+
         mLocationClient = new LocationClient(getActivity().getApplicationContext());
         mLocationClient.registerLocationListener(new MyLocationListener());
         SDKInitializer.initialize(getActivity().getApplicationContext());
@@ -872,6 +872,7 @@ public class Functionrealization extends Fragment   implements OnGetPoiSearchRes
         @Override
         public boolean onPoiClick(int index) {
             super.onPoiClick(index);
+            PoiInfo poi = getPoiResult().getAllPoi().get(index);
 
             ArrayAdapter<String> ss=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1);
             ss.add("津A.00002");
@@ -888,7 +889,12 @@ public class Functionrealization extends Fragment   implements OnGetPoiSearchRes
             });
             choseCarDialog.setOnDismissListener(new ChoseCarDialog.OnItemInDlgClickListener() {
                 public void onItemClick(int position) {
-                    Toast.makeText(getActivity(), "预约成功，请于十分钟内到达指定地点",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "预约成功，请于十分钟内到达"+poi.address,Toast.LENGTH_SHORT).show();
+                    mBaiduMap.clear();
+                    mSugListView.setAdapter(null);
+                    showPoiDetailView(false);
+                    PoiInfo poiInfo = mAllPoi.get(position);
+                    addPoiLoction(poiInfo.getLocation());
                 }
             });
             choseCarDialog.show();
