@@ -872,32 +872,12 @@ public class Functionrealization extends Fragment   implements OnGetPoiSearchRes
         @Override
         public boolean onPoiClick(int index) {
             super.onPoiClick(index);
-//            PoiInfo poi = getPoiResult().getAllPoi().get(index);
 
-//            //创建一个警告对话框
-//            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-//            builder.setTitle("停车位预约,请选择您所注册的车辆");
             ArrayAdapter<String> ss=new ArrayAdapter<String>(getActivity(),android.R.layout.simple_list_item_1);
             ss.add("津A.00002");
             ss.add("津A.00004");
             ss.add("津A.00242");
-//            builder.setSingleChoiceItems(ss,0, new DialogInterface.OnClickListener() {
-//                @Override
-//                public void onClick(DialogInterface dialog, int which) {
-//                    Toast.makeText(getActivity(),ss[which],Toast.LENGTH_SHORT).show();
-//                }
-//            });
-//
-//            builder.setPositiveButton("取消",null);
-//            builder.setNegativeButton("确定", new DialogInterface.OnClickListener() {
-//                @Override
-//                public void onClick(DialogInterface dialog, int which) {
-//                    Toast.makeText(getActivity(),"选择了确定",Toast.LENGTH_SHORT).show();
-//
-//                }
-//            });
-//            AlertDialog alertDialog =builder.create();//这个方法可以返回一个alertDialog对象
-//            alertDialog.show();
+
 
             // 多条路线Dialog
             ChoseCarDialog choseCarDialog = new ChoseCarDialog(getActivity(), ss, RouteLineAdapter.Type.DRIVING_ROUTE);
@@ -912,9 +892,6 @@ public class Functionrealization extends Fragment   implements OnGetPoiSearchRes
                 }
             });
             choseCarDialog.show();
-
-
-//            Toast.makeText(getActivity(),poi.address,Toast.LENGTH_LONG).show();
             return true;
         }
     }
