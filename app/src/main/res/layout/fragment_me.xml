@@ -19,7 +19,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:background="@drawable/btn_me_shape"
-        android:drawableLeft="@drawable/notice"
+        android:drawableLeft="@drawable/x0"
         android:drawablePadding="30dp"
         android:gravity="center_vertical"
         android:paddingLeft="30sp"
@@ -34,7 +34,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:background="@drawable/btn_me_shape"
-        android:drawableLeft="@drawable/notice"
+        android:drawableLeft="@drawable/x1"
         android:drawablePadding="30dp"
         android:gravity="center_vertical"
         android:paddingLeft="30sp"
@@ -46,7 +46,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:background="@drawable/btn_me_shape"
-        android:drawableLeft="@drawable/customer_service"
+        android:drawableLeft="@drawable/x2"
         android:layout_gravity="center"
         android:layout_height="70dp"
         android:paddingLeft="30sp"
@@ -63,56 +63,12 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:background="@drawable/btn_me_shape"
-        android:drawableLeft="@drawable/customer_service"
+        android:drawableLeft="@drawable/x3"
         android:drawablePadding="30dp"
         android:gravity="center_vertical"
         android:paddingLeft="30sp"
         android:text="设置"
         android:textColor="#323232"
         android:textSize="20sp" />
-
-
-    <!--<RelativeLayout
-        android:layout_margin="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="个人信息"/>
-        <TextView
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="退出"/>
-
-    </RelativeLayout>
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_gravity="center"
-        android:layout_marginTop="35dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_launcher_background"/>
-
-    <Button
-        android:background="@drawable/btn_me_shape"
-        android:layout_marginTop="90dp"
-        android:layout_gravity="center"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="联系客服"/>
-    <Button
-        android:layout_marginTop="40dp"
-        android:layout_width="250dp"
-        android:background="@drawable/btn_me_shape"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="通知中心"/>-->
 
 </LinearLayout>

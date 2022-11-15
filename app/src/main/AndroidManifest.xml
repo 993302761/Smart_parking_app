@@ -48,6 +48,7 @@
         <activity android:name=".home.RegisterActivity"/>
         <activity android:name=".home.RegisterMessageActivity"/>
         <activity android:name=".home.OrderActivity"/>
+        <activity android:name=".home.OrderMessageActivity"/>
 
         <activity
             android:name=".home.Sign_in_Activity"

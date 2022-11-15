@@ -19,8 +19,8 @@ android:orientation="vertical">
         android:layout_gravity="bottom|center"
         android:gravity="center"
         android:text="订单已完成"
-        android:textColor="#070202"
-        android:textSize="24sp"
+        android:textColor="#524E4E"
+        android:textSize="30dp"
         tools:visibility="visible" />
 
 </LinearLayout>
@@ -38,14 +38,14 @@ android:orientation="vertical">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="订单编号:"
-        android:textSize="24sp"/>
+        android:textSize="20dp"/>
 
     <TextView android:id="@+id/weather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
         android:text="1513458762102"
-        android:textSize="24sp"/>
+        android:textSize="20dp"/>
 
 </LinearLayout>
 
@@ -60,14 +60,14 @@ android:orientation="vertical">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="进入时间:"
-        android:textSize="24sp"/>
+        android:textSize="20dp"/>
 
     <TextView android:id="@+id/temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
         android:text="2022-11-1 18:20:00"
-        android:textSize="24sp"/>
+        android:textSize="20dp"/>
 
 </LinearLayout>
 
@@ -82,14 +82,14 @@ android:orientation="vertical">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="离开时间:"
-        android:textSize="24sp"/>
+        android:textSize="20dp"/>
 
     <TextView android:id="@+id/humidity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
         android:text="2022-11-1 19:20:00"
-        android:textSize="24sp"/>
+        android:textSize="20dp"/>
 
 </LinearLayout>
 
@@ -105,14 +105,14 @@ android:orientation="vertical">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="支付金额:"
-        android:textSize="24sp"/>
+        android:textSize="20dp"/>
 
     <TextView android:id="@+id/visibility"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
         android:text="5 （元）"
-        android:textSize="24sp"/>
+        android:textSize="20dp"/>
 
 </LinearLayout>
 
@@ -127,15 +127,15 @@ android:orientation="vertical">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="停车场名:"
-            android:textSize="24sp" />
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/precipitation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
-            android:text="天津职业及时师范大学停车场"
-            android:textSize="20sp" />
+            android:text="天津职业技术师范大学停车场"
+            android:textSize="16dp" />
 
     </LinearLayout>
 
@@ -150,14 +150,14 @@ android:orientation="vertical">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="积分:"
-            android:textSize="24sp"/>
+            android:textSize="20dp"/>
 
         <TextView android:id="@+id/integral"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
             android:text="+ 10"
-            android:textSize="24sp"/>
+            android:textSize="20dp"/>
 
     </LinearLayout>
 
@@ -172,14 +172,14 @@ android:orientation="vertical">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="支付时间:"
-            android:textSize="24sp"/>
+            android:textSize="20dp"/>
 
         <TextView android:id="@+id/time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
             android:text="2022-11-1 20:20:00"
-            android:textSize="24sp"/>
+            android:textSize="20dp"/>
 
     </LinearLayout>
 

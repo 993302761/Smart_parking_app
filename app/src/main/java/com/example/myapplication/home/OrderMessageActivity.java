@@ -5,36 +5,20 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
 import com.example.myapplication.R;
 
-public class OrderActivity extends Activity {
+public class OrderMessageActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_order);
-        ListView t= (ListView) findViewById(R.id.listview1);
-        t.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent();
-                intent.setClass(getApplicationContext(), OrderMessageActivity.class);
-                startActivity(intent);
-            }
-        });
+        setContentView(R.layout.fragment_ordermessage);
         code();
     }
-
-
-
 
     private void code()
     {
